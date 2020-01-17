@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FPTiga</string>
+
+    <string name="nama">nama</string>
+    <string name="password">password</string>
+    <string name="login">Login</string>
+</resources>

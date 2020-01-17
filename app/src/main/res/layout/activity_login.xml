@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity"
+    android:gravity="center"
+    android:layout_gravity="bottom">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/bangers"
+        android:text="Healt One"
+        android:textSize="70sp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginTop="20dp"
+        app:boxStrokeColor="#4CAF50"
+        app:boxStrokeWidth="5dp"
+        android:theme="@style/TextLabel">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_nama"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/nama"
+            android:paddingStart="15dp"
+            android:src="@drawable/ed_rounded"
+            android:layout_marginBottom="20dp"
+            android:inputType="text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="#4CAF50"
+        app:boxStrokeWidth="5dp"
+        android:theme="@style/TextLabel">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:hint="@string/password"
+            android:paddingStart="15dp"
+            android:layout_marginBottom="20dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:passwordToggleEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxStrokeColor="#4CAF50"
+            app:boxStrokeWidth="5dp"
+            android:theme="@style/TextLabel"
+            android:layout_marginRight="2dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_tinggi"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:hint="Tinggi (cm)"
+                android:paddingStart="15dp"
+                android:layout_marginBottom="20dp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:passwordToggleEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxStrokeColor="#4CAF50"
+            app:boxStrokeWidth="5dp"
+            android:theme="@style/TextLabel"
+            android:layout_marginLeft="2dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_berat"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:hint="Berat (kg)"
+                android:paddingStart="15dp"
+                android:layout_marginBottom="20dp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btn_login2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="10dp"/>
+
+
+</LinearLayout>
